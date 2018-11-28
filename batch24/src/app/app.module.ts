@@ -15,6 +15,7 @@ import { ObjFormsComponent } from './obj-forms/obj-forms.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { HexaPipe } from './hexa.pipe';
 import { ParamsPipe } from './params.pipe';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ParamsPipe } from './params.pipe';
     ObjFormsComponent,
     PipesComponent,
     HexaPipe,
-    ParamsPipe
+    ParamsPipe,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,

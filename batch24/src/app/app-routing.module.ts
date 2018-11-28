@@ -9,6 +9,7 @@ import { EventsComponent } from './events/events.component';
 import { StatesComponent } from './states/states.component';
 import { ObjFormsComponent } from './obj-forms/obj-forms.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 const routes: Routes = [
 
@@ -20,6 +21,7 @@ const routes: Routes = [
 {path:'form-states', component:StatesComponent},
 {path:'obj-forms', component:ObjFormsComponent},
 {path:'pipes', component:PipesComponent},
+{path:'life-cycle', component:LifeCycleComponent},
 
 ];
 
