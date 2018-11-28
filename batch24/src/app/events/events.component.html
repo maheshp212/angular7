@@ -1,0 +1,24 @@
+<p>
+  events works!
+</p>
+<p (click)="callMe()" > this is click </p>
+<p (dblclick)="callMe()" > this is dblclick </p>
+<p (mouseover)="callMe()" > this is vove </p>
+<p (mouseout)="callMe()" > this is out </p>
+<p (mouseenter)="callMe()" > this is enter </p>
+<p (mouseleave)="callMe()" > this is leave </p>
+<p (mousemove)="callMe()" > this is move</p>
+
+
+<pre>
+<input type="text" placeholder="click" (click)="callMe()" name="text" [(ngModel)]="text">	
+<input type="text" placeholder="focus" (focus)="callMe()" name="text" [(ngModel)]="text">	
+<input type="text" placeholder="blur" (blur)="callMe()" name="text" [(ngModel)]="text">	
+<input type="text" placeholder="change" (change)="callMe()" name="text" [(ngModel)]="text">	
+<input type="text" placeholder="keypress" (keypress)="callMe()" name="text" [(ngModel)]="text">	
+<input type="text" placeholder="keyup" (keyup)="callMe()" name="text" [(ngModel)]="text">	
+<input type="text" placeholder="keydown" (keydown)="callMe()" name="text" [(ngModel)]="text">	
+<input type="text" placeholder="copy" (copy)="callMe()" name="text" [(ngModel)]="text">	
+<input type="text" placeholder="paste" (paste)="callMe()" name="text" [(ngModel)]="text">	
+<input type="text" placeholder="cut" (cut)="callMe()" name="text" [(ngModel)]="text">	
+</pre>

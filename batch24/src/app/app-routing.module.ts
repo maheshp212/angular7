@@ -5,6 +5,10 @@ import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './intro/intro.component';
 import { VariablesComponent } from './variables/variables.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { EventsComponent } from './events/events.component';
+import { StatesComponent } from './states/states.component';
+import { ObjFormsComponent } from './obj-forms/obj-forms.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 const routes: Routes = [
 
@@ -12,6 +16,10 @@ const routes: Routes = [
 {path:'intro', component:IntroComponent},
 {path:'variables', component:VariablesComponent},
 {path:'directives', component:DirectiveComponent},
+{path:'events', component:EventsComponent},
+{path:'form-states', component:StatesComponent},
+{path:'obj-forms', component:ObjFormsComponent},
+{path:'pipes', component:PipesComponent},
 
 ];
 

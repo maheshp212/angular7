@@ -1,0 +1,39 @@
+<p>
+  states works!
+</p>
+
+<form name="f" #frm=ngForm>
+	<pre>
+		<input type="text" name="fname" [(ngModel)]="fname" #firstName=ngModel placeholder="fname" required minlength="5" maxlength="10">
+
+		<!-- <p style="color: red" *ngIf="firstName.dirty && firstName.invalid"> please enter a valid input </p> -->
+		<p style="color: red" *ngIf="firstName.dirty && firstName.hasError('required')"> this is mandatory</p>
+		<p style="color: red" *ngIf="firstName.dirty && firstName.hasError('minlength')"> please enter min 5 characters </p>
+		<input type="text" name="lname" [(ngModel)]="lname" #lastName=ngModel placeholder="lname">
+		<input type="submit" value="submit">
+	</pre>
+</form>
+
+<pre>
+
+	firstName.valid :: {{firstName.valid}}
+	firstName.invalid :: {{firstName.invalid}}
+	firstName.dirty :: {{firstName.dirty}}
+	firstName.pristint :: {{firstName.pristine}}
+	firstName.touched :: {{firstName.touched}}
+	firstName.untouched :: {{firstName.untouched}}
+	firstName.hasError req::  {{firstName.hasError('required')}}
+	firstName.hasError min::  {{firstName.hasError('minlength')}}
+	firstName.hasError max::  {{firstName.hasError('maxlength')}}
+	firstName.hasError req::  {{firstName.error?.required}}
+	firstName.hasError min::  {{firstName.error?.minlength}}
+	firstName.hasError max::  {{firstName.error?.maxlength}}
+	
+	frm.valid :: {{frm.valid}}
+	frm.invalid :: {{frm.invalid}}
+	frm.dirty :: {{frm.dirty}}
+	frm.pristint :: {{frm.pristine}}
+	frm.touched :: {{frm.touched}}
+	frm.untouched :: {{frm.untouched}}
+	frm.untouched :: {{frm.submitted}}
+</pre>

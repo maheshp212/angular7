@@ -1,0 +1,36 @@
+
+<form name="f" #frm=ngForm  novalidate>
+	<pre>
+		<input type="text" name="fname" [(ngModel)]="user.fname" #fname=ngModel placeholder="fname" required minlength="5" maxlength="10">
+
+		<!-- <p style="color: red" *ngIf="fname.dirty && fname.invalid"> please enter a valid input </p> -->
+		<p style="color: red" *ngIf="fname.dirty && fname.hasError('required')"> this is mandatory</p>
+		<p style="color: red" *ngIf="fname.dirty && fname.hasError('minlength')"> please enter min 5 characters </p>
+		<input type="text" name="lname" [(ngModel)]="user.lname" #lname=ngModel placeholder="lname">
+		<input type="button" value="submit" (click)="frm.valid && login()">
+	</pre>
+</form>
+
+<pre>
+
+	fname.valid :: {{fname.valid}}
+	fname.invalid :: {{fname.invalid}}
+	fname.dirty :: {{fname.dirty}}
+	fname.pristint :: {{fname.pristine}}
+	fname.touched :: {{fname.touched}}
+	fname.untouched :: {{fname.untouched}}
+	fname.hasError req::  {{fname.hasError('required')}}
+	fname.hasError min::  {{fname.hasError('minlength')}}
+	fname.hasError max::  {{fname.hasError('maxlength')}}
+	fname.hasError req::  {{fname.error?.required}}
+	fname.hasError min::  {{fname.error?.minlength}}
+	fname.hasError max::  {{fname.error?.maxlength}}
+	
+	frm.valid :: {{frm.valid}}
+	frm.invalid :: {{frm.invalid}}
+	frm.dirty :: {{frm.dirty}}
+	frm.pristint :: {{frm.pristine}}
+	frm.touched :: {{frm.touched}}
+	frm.untouched :: {{frm.untouched}}
+	frm.untouched :: {{frm.submitted}}
+</pre>
