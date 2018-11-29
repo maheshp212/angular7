@@ -16,6 +16,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { HexaPipe } from './hexa.pipe';
 import { ParamsPipe } from './params.pipe';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { AttrDirective } from './attr.directive';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     PipesComponent,
     HexaPipe,
     ParamsPipe,
-    LifeCycleComponent
+    LifeCycleComponent,
+    AttrDirective
   ],
   imports: [
     BrowserModule,

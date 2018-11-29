@@ -13,4 +13,7 @@ export class DirectiveComponent implements OnInit {
   ngOnInit() {
   }
 
+	qshore(){
+		console.log('directive cutom logic in component')
+	}
 }
