@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pipes',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pipes.component.scss']
 })
 export class PipesComponent implements OnInit {
+  @Input() msg:string = '';
 
 	fname:string = 'qShoRe';
 	age:number = 34;

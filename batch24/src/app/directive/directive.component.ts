@@ -16,4 +16,8 @@ export class DirectiveComponent implements OnInit {
 	qshore(){
 		console.log('directive cutom logic in component')
 	}
+  callme(evnet){
+    console.log(evnet);
+  }
+
 }

@@ -1,5 +1,7 @@
 
-<p [appAttr]="qshore" [msg]="'hello'" [fname]="23" > custom directive</p>
+<p [appAttr]="qshore" [msg]="'hello'" [fname]="23" (output2)="callme($event)" > custom directive</p>
+
+<p class="appClass"> this is class direccitve </p>
 <p *ngIf="a==2"> this is if </p>
 <p [hidden]="a==2"> this is hidden </p>
 <p [ngSwitch]="a">
