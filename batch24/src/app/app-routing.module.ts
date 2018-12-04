@@ -11,11 +11,12 @@ import { ObjFormsComponent } from './obj-forms/obj-forms.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { ApisComponent } from './apis/apis.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
 
-{path:'home', component:HomeComponent},
-{path:'intro', component:IntroComponent},
+{path:'', component:HomeComponent},
+{path:'intro/:fname/:age', component:IntroComponent},
 {path:'variables', component:VariablesComponent},
 {path:'directives', component:DirectiveComponent},
 {path:'events', component:EventsComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
 {path:'pipes', component:PipesComponent},
 {path:'life-cycle', component:LifeCycleComponent},
 {path:'apis', component:ApisComponent},
+{path:'**', component:NotfoundComponent},
 
 ];
 
