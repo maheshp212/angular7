@@ -4,7 +4,7 @@ import {UsersService} from './../users.service'
 @Component({
   selector: 'app-apis',
   templateUrl: './apis.component.html',
-  styleUrls: ['./apis.component.scss']
+  styleUrls: ['./apis.component.scss'],
   providers: [UsersService]
 })
 export class ApisComponent implements OnInit {
