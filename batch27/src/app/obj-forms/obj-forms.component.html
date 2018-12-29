@@ -1,0 +1,47 @@
+<p>
+  obj-forms works!
+</p>
+
+<p>
+  form-states works!
+</p>
+
+<form #f=ngForm (submit)="f.valid && login()" novalidate>
+	<pre>
+		<input type="text" name="fname" [(ngModel)]="user.fname" #fname="ngModel" required minlength="5">
+
+		<p *ngIf="fname.dirty && fname.invalid"> please enter a valid input </p>
+		<p [hidden]="!fname.dirty || fname.valid"> please enter a valid input </p>
+		<p *ngIf="fname.dirty && fname.hasError('required')"> this is a mandatory feild </p>
+		<p *ngIf="fname.dirty && fname.hasError('minlength')"> please enter min 5 characters </p>
+
+		<input type="text" name="lname" [(ngModel)]="user.lname" #lname="ngModel"> 
+
+		<input type="submit" value="login">
+
+		feild states
+
+		valid :: {{fname.valid}}
+		invalid :: {{fname.invalid}}
+		dirty :: {{fname.dirty}}
+		pristine :: {{fname.pristine}}
+		touched :: {{fname.touched}}
+		untouched :: {{fname.untouched}}
+
+
+
+		from states
+
+		valid :: {{f.valid}}
+		invalid :: {{f.invalid}}
+		dirty :: {{f.dirty}}
+		pristine :: {{f.pristine}}
+		touched :: {{f.touched}}
+		untouched :: {{f.untouched}}
+		submitted :: {{f.submitted}}
+
+
+
+	</pre>
+</form>
+

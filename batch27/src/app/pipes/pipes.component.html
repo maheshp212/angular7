@@ -1,0 +1,27 @@
+<p>
+  pipes works!
+</p>
+<pre>
+	{{fname}}
+	{{fname | lowercase}}
+	{{fname | uppercase}}
+
+
+	{{age}}
+	{{age | number}}
+	{{age | currency}}
+	{{age | currency:'Rs. '}}
+	{{age | currency:'INR'}}
+	{{age | currency:'&#8377;'}} <!-- support of html codes in currency pipe started from ang5 -->
+
+
+	{{age  | hexaaaaaaaaaaaaaa}}
+	{{255 | hexaaaaaaaaaaaaaa}}
+
+	{{5 | params:2:3:5}}
+
+	{{day}}
+	{{day | date}}
+	{{day | date :'dd-MM-yy'}}
+
+</pre>
