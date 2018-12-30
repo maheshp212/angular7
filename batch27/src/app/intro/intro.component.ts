@@ -12,4 +12,13 @@ export class IntroComponent implements OnInit {
   ngOnInit() {
   }
 
+  getName(a){
+  	alert(a)
+  }
+
+  getAge(a){
+  	alert(a)
+  }
+
+
 }

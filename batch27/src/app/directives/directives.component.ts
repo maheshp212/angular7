@@ -19,4 +19,11 @@ export class DirectivesComponent implements OnInit {
   	this.count++;
   }
 
+
+  login(){
+    console.log('directives logic form component')
+  }
+  outputEvent(a){
+    console.log(a);
+  }
 }

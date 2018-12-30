@@ -1,3 +1,5 @@
 <p>
   intro works!
 </p>
+
+<app-output [msg]="'hiii'" [user]="{name:'asdf', age:45}" (getName)="getName($event)" (getAge)= "getAge($event)" ></app-output>
