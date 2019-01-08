@@ -1,0 +1,28 @@
+<p>
+  form-states works!
+</p>
+<pre>
+	<form #f=ngForm>
+		<input type="text" name="fname" [(ngModel)]="fname" #firstName="ngModel" required>
+		<input type="text" name="lname" [(ngModel)]="hashKey" #hkey="ngModel">
+		<input type="submit" value="subit">
+	</form>
+
+	feild
+	valid :: {{firstName.valid}}
+	invalid :: {{firstName.invalid}}
+	dirty :: {{firstName.dirty}}
+	pristine :: {{firstName.pristine}}
+	touched :: {{firstName.touched}}
+	untouched :: {{firstName.untouched}}
+
+	form
+
+	valid :: {{f.valid}}
+	invalid :: {{f.invalid}}
+	dirty :: {{f.dirty}}
+	pristine :: {{f.pristine}}
+	touched :: {{f.touched}}
+	untouched :: {{f.untouched}}
+	submitted :: {{f.submitted}}
+</pre>
