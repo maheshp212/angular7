@@ -1,0 +1,35 @@
+<p>
+  obj-forms works!
+</p>
+
+<pre>
+	<form #f=ngForm>
+		{{user | json}} **
+		<input type="text" name="fname" [(ngModel)]="user.fname" #fname="ngModel" required minlength="5">
+
+		<div *ngIf="fname.dirty && fname.hasError('required')" style="color: red"> this is a mandatory feild</div>
+		<div  *ngIf="fname.dirty && fname.hasError('minlength')" style="color: red"> please enter min 5 charcters</div>
+		<input type="text" name="lname" [(ngModel)]="user.lname" #lname="ngModel">
+		<input type="submit" value="subit">
+	</form>
+
+	feild
+	valid :: {{fname.valid}}
+	invalid :: {{fname.invalid}}
+	dirty :: {{fname.dirty}}
+	pristine :: {{fname.pristine}}
+	touched :: {{fname.touched}}
+	untouched :: {{fname.untouched}}
+	req :: {{fname.hasError('required')}}
+	min :: {{fname.hasError('minlength')}}
+
+	form
+
+	valid :: {{f.valid}}
+	invalid :: {{f.invalid}}
+	dirty :: {{f.dirty}}
+	pristine :: {{f.pristine}}
+	touched :: {{f.touched}}
+	untouched :: {{f.untouched}}
+	submitted :: {{f.submitted}}
+</pre>
