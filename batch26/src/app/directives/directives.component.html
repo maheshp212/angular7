@@ -18,6 +18,12 @@ events
 	# - local variable 
 -->
 {{fname}}
+
+<div [appAttr]="login" [fname]="'hello'" [msg]="fname" (data)="fetchfromdir($event)">  Custom Directive</div>
+
+
+<div class="appClass" [fname]="'hello'" [msg]="fname"> class custom direcive </div>
+
 <input type="text" name="fname" [(ngModel)]="fname">
 
 <p *ngIf="fname == 'qshore'"> this is if</p>

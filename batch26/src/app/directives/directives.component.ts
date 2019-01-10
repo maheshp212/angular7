@@ -20,4 +20,11 @@ export class DirectivesComponent implements OnInit {
 
   }
 
+  login(){
+    console.log('component specific business logic for the custom direcitve')
+  }
+
+  fetchfromdir(event){
+    console.log(event);
+  }
 }
