@@ -27,4 +27,12 @@ export class DirectivesComponent implements OnInit {
   fetchfromdir(event){
     console.log(event);
   }
+
+  getSqrt(op){
+    alert('sqrt :::: ' + op );
+  }
+
+  getSquare(num){
+    alert('square :::: ' + num );
+  }
 }

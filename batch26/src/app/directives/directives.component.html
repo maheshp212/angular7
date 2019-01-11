@@ -19,6 +19,10 @@ events
 -->
 {{fname}}
 
+
+<app-output-nested [num]="9" (sqrt)="getSqrt($event)" (square)="getSquare($event)" ></app-output-nested>
+
+
 <div [appAttr]="login" [fname]="'hello'" [msg]="fname" (data)="fetchfromdir($event)">  Custom Directive</div>
 
 

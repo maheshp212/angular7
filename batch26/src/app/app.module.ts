@@ -16,6 +16,7 @@ import { HexaPipe } from './hexa.pipe';
 import { ParamsPipe, Params2Pipe } from './params.pipe';
 import { AttrDirective } from './attr.directive';
 import { ClassDirective } from './class.directive';
+import { OutputNestedComponent } from './output-nested/output-nested.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ClassDirective } from './class.directive';
     ParamsPipe,
     Params2Pipe,
     AttrDirective,
-    ClassDirective
+    ClassDirective,
+    OutputNestedComponent
   ],
   imports: [
     BrowserModule,
