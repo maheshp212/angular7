@@ -33,7 +33,7 @@ export class ApisComponent implements OnInit {
   }
 
   createUser(){
-	this.user.createUser().subscribe((res)=>{
+	this.user.createUser().subscribe((res:any)=>{
   		this.userInfo = res.data;
   		this.listUsers();
   	}, ()=>{
