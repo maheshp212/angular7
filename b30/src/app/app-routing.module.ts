@@ -6,6 +6,7 @@ import { IntroComponent } from './intro/intro.component';
 import { VariablesComponent } from './variables/variables.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { FormStatesComponent } from './form-states/form-states.component';
+import { ObjFormsComponent } from './obj-forms/obj-forms.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'variables', component:VariablesComponent},
   {path:'directives', component:DirectivesComponent},
   {path:'states', component:FormStatesComponent},
+  {path:'obj-form', component:ObjFormsComponent},
 ];
 
 @NgModule({
