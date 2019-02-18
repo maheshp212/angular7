@@ -19,4 +19,8 @@ export class DirectivesComponent implements OnInit {
     console.log(this.count);
     this.count++;
   }
+  customLogic(){
+    console.log('directive custom logic depends on component')
+  }
 }
+

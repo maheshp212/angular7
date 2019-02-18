@@ -2,7 +2,7 @@
   obj-forms works!
 </p>
 <pre>
-    <form #f=ngForm >
+    <form #f=ngForm f >
       <input type="text" name="fname" [(ngModel)]="user.fname" #fname=ngModel placeholder="fname" required minlength="5"
       pattern="[a-zA-Z0-9\s#]+">
       
@@ -12,7 +12,7 @@
 
       <input type="text" name="lname" [(ngModel)]="user.lname" #lname=ngModel placeholder="lname">
     
-      <input type="submit" (click)="login(f, fname, lname)">
+      <input type="submit" (click)="f.valid && login(f, fname, lname)">
       
     </form>
     
