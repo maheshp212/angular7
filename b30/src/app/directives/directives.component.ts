@@ -22,5 +22,17 @@ export class DirectivesComponent implements OnInit {
   customLogic(){
     console.log('directive custom logic depends on component')
   }
+
+  fetchAge(age){
+    alert(age);
+  }
+
+  getName(name){
+    alert(name);
+  }
+
+  gender(gender){
+    alert(gender);
+  }
 }
 

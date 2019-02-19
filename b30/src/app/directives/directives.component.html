@@ -1,7 +1,15 @@
 <p>
   directives works!
 </p>
-<div [appAttr]="customLogic" [msg]="'asdf'" [fname]="fname" >custom directive </div>
+<div [appAttr]="customLogic" [msg]="'asdf'" [fname]="fname" >custom attribute directive </div>
+
+<div class="appClassDir">custom class directive</div>
+
+<app-op [user]="{fname:'qshore', age:77, gender:true}" 
+(age)="fetchAge($event)" 
+(name)="getName($event)" 
+(gender)="gender($event)" ></app-op>
+
 
 <p *ngIf="fname== 'qshore'">  this is if </p>
 <p [hidden]="fname== 'qshore'">  this is hide </p>

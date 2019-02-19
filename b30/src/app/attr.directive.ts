@@ -11,7 +11,6 @@ export class AttrDirective {
 
   @Output() asdf = new EventEmitter();
 
-  
   constructor() { }
 
   @HostListener('mouseout')
