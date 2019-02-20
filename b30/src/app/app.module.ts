@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { AttrDirective } from './attr.directive';
 import { ClassDirDirective } from './class-dir.directive';
 import { OpComponent } from './op/op.component';
+import { AsdfDirective } from './asdf.directive';
+import { ApisComponent } from './apis/apis.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +36,15 @@ import { OpComponent } from './op/op.component';
     LifeCycleComponent,
     AttrDirective,
     ClassDirDirective,
-    OpComponent
+    OpComponent,
+    AsdfDirective,
+    ApisComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
