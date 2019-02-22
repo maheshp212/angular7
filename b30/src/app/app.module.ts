@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http'
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { ClassDirDirective } from './class-dir.directive';
 import { OpComponent } from './op/op.component';
 import { AsdfDirective } from './asdf.directive';
 import { ApisComponent } from './apis/apis.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +40,15 @@ import { ApisComponent } from './apis/apis.component';
     ClassDirDirective,
     OpComponent,
     AsdfDirective,
-    ApisComponent
+    ApisComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
