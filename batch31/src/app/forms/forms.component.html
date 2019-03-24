@@ -1,0 +1,33 @@
+<p>
+  forms works!
+</p>
+<pre>
+<form name="frm" #f=ngForm>
+    <input type="text" name="fname" [(ngModel)]="fname" #firstName=ngModel required>
+    <input type="text" name="lname" [(ngModel)]="lname" #lastName=ngModel>
+    
+    
+    <input type="submit">
+
+    feild states
+
+    <!-- valid :: {{frm.fname.$valid}} -->
+    valid :: {{firstName.valid}}
+    invalid :: {{firstName.invalid}}
+    dirty :: {{firstName.dirty}}
+    pristine :: {{firstName.pristine}}
+    touched :: {{firstName.touched}}
+    untouched :: {{firstName.untouched}}
+
+    form states
+    valid :: {{f.valid}}
+    invalid :: {{f.invalid}}
+    dirty :: {{f.dirty}}
+    pristine :: {{f.pristine}}
+    touched :: {{f.touched}}
+    untouched :: {{f.untouched}}
+    submitted :: {{f.submitted}}
+
+</form>
+
+</pre>
