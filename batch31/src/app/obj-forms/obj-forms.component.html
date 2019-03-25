@@ -1,0 +1,42 @@
+<p>
+  obj-forms works!
+</p>
+
+  <pre>
+  <form name="frm" #f=ngForm>
+      <input type="text" name="fname" [(ngModel)]="login.fname" #fname=ngModel required minlength="5" maxlength="10">
+
+
+      <!-- <p *ngIf="fname.dirty && fname.hasError('required')"> this is a mandatroy feild</p>
+      <p *ngIf="fname.dirty && fname.hasError('minlength')"> please enter min 5 characters</p> -->
+
+      <p *ngIf="f.submitted && fname.hasError('required')"> this is a mandatroy feild</p>
+      <p *ngIf="f.submitted && fname.hasError('minlength')"> please enter min 5 characters</p>
+      
+      <input type="text" name="lname" [(ngModel)]="login.lname" #lname=ngModel>
+      
+      
+      <input type="submit">
+  
+      feild states
+  
+      <!-- valid :: {{frm.fname.$valid}} -->
+      valid :: {{fname.valid}}
+      invalid :: {{fname.invalid}}
+      dirty :: {{fname.dirty}}
+      pristine :: {{fname.pristine}}
+      touched :: {{fname.touched}}
+      untouched :: {{fname.untouched}}
+  
+      form states
+      valid :: {{f.valid}}
+      invalid :: {{f.invalid}}
+      dirty :: {{f.dirty}}
+      pristine :: {{f.pristine}}
+      touched :: {{f.touched}}
+      untouched :: {{f.untouched}}
+      submitted :: {{f.submitted}}
+  
+  </form>
+  
+  </pre>
