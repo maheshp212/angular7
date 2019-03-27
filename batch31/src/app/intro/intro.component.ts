@@ -12,4 +12,8 @@ export class IntroComponent implements OnInit {
   ngOnInit() {
   }
 
+  getdetals(){
+    console.log('getter');
+  }
+
 }

@@ -20,4 +20,17 @@ export class DirectivesComponent implements OnInit {
     console.log(this.count);
     this.count++;
   }
+
+  login(){
+    console.log(' this is a custom directive logic from component');
+  }
+  getFname(fname){
+    console.log(fname);
+
+  }
+  getData(name){
+    console.log('asdfasdfasdfasdf');
+    console.log(name);
+  }
+
 }

@@ -9,6 +9,17 @@
   # - local variables
 -->
 
+<!-- custom directives: start -->
+
+<!-- if it is a string use single quotes , if it isa variable dont use single quotes -->
+<p [appAttr]="login" [msg]="'hello'" [fname]="fname" (getFname)="getFname($event)" >this is custom directive</p>
+
+<p class="appClass" (getData)=getData($event)> calss directive</p>
+
+
+
+<!-- custom directives: end -->
+
 <p *ngIf="fname == 'qshore'"> this is if </p>
 <p [hidden]="fname == 'qshore'"> this is hide </p>
 
