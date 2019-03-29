@@ -17,7 +17,9 @@
 <p class="appClass" (getData)=getData($event)> calss directive</p>
 
 
-
+<app-output [user]="user" 
+    (getName)=getName($event);
+    (getPhone)=readPhone($event); ></app-output>
 <!-- custom directives: end -->
 
 <p *ngIf="fname == 'qshore'"> this is if </p>

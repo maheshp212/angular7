@@ -10,7 +10,7 @@ export class DirectivesComponent implements OnInit {
   fname:string = 'qshore';
   fruits = ['kiwi', 'melon', 'berry'];
   count = 0;
-
+  user = {name:'qshore Technologoes', age:5, phone:9876543210}
   constructor() { }
 
   ngOnInit() {
@@ -31,6 +31,19 @@ export class DirectivesComponent implements OnInit {
   getData(name){
     console.log('asdfasdfasdfasdf');
     console.log(name);
+  }
+
+
+  getName(name){
+    alert(name)
+  }
+
+  fetchAge(age){
+    alert(age);
+  }
+
+  readPhone(phone){
+    alert(phone);
   }
 
 }
