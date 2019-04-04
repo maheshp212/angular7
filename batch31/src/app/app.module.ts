@@ -17,6 +17,7 @@ import { AttrDirective } from './attr.directive';
 import { ClassDirective } from './class.directive';
 import { OutputComponent } from './output/output.component';
 import { ApisComponent } from './apis/apis.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ApisComponent } from './apis/apis.component';
     AttrDirective,
     ClassDirective,
     OutputComponent,
-    ApisComponent
+    ApisComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,
