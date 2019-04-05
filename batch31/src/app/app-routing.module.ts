@@ -9,6 +9,7 @@ import { ObjFormsComponent } from './obj-forms/obj-forms.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ApisComponent } from './apis/apis.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 // $routeProvider
 // .when('/red', {
@@ -16,15 +17,16 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
 //   controller:''
 // })
 const routes: Routes = [
-  {path:'home', component:HomeComponent},
-  {path:'intro', component:IntroComponent},
+  {path:'', component:HomeComponent},
+  {path:'intro/:age/:fname', component:IntroComponent},
   {path:'variables', component:VariablesComponent},
   {path:'directives', component:DirectivesComponent},
   {path:'forms', component:FormsComponent},
   {path:'obj-forms', component:ObjFormsComponent},
   {path:'pipes', component:PipesComponent},
   {path:'apis', component:ApisComponent},
-  {path:'life', component:LifecycleComponent}
+  {path:'life', component:LifecycleComponent},
+  {path:'**', component:NotfoundComponent}
 ];
 
 @NgModule({

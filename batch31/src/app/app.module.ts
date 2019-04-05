@@ -18,6 +18,7 @@ import { ClassDirective } from './class.directive';
 import { OutputComponent } from './output/output.component';
 import { ApisComponent } from './apis/apis.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
     ClassDirective,
     OutputComponent,
     ApisComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
