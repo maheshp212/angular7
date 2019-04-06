@@ -9,10 +9,11 @@ import {ActivatedRoute} from '@angular/router'
 export class IntroComponent implements OnInit {
 
   constructor(private route:ActivatedRoute) { }
-
+params:any
   ngOnInit() {
     this.route.params.subscribe((x)=>{
       console.log(x);
+      this.params.id = x.id;
     })
   }
 
