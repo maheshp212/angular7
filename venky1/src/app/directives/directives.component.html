@@ -1,0 +1,29 @@
+<p>
+  directives works!
+</p>
+<pre>
+  =     =
+      =
+    =
+              =
+{{fname}} 
+{{fruits}} -- one way data binding / interpolation
+</pre>
+
+<p *ngIf="fname == 'venky'">this is if</p>
+<p [hidden]="fname == 'venky'">this is hidden</p>
+
+<p *ngFor="let x of fruits"> {{x}} </p>
+<ol>
+  <li *ngFor="let x of fruits"> {{x}} </li>
+</ol>
+
+
+<p [ngSwitch]="fname">
+  <label *ngSwitchCase="'venky'">this is venky</label>
+  <label *ngSwitchCase="'angular'">this is angular</label>
+  <label *ngSwitchCase="'tech'">this is tech</label>
+  <label *ngSwitchDefault>this is Default</label>
+
+</p>
+<input type="text" [(ngModel)]="fname" >

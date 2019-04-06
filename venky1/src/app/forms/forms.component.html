@@ -1,0 +1,41 @@
+<p>
+  forms works!
+</p>
+<!--
+  form validation attributes
+  required
+  minlength
+  maxlength
+  min
+  max
+  pattern
+-->
+<pre>
+
+<form name="f" #frm=ngForm>
+  <input type="text" name="uname" [(ngModel)]="login.uname" #uname=ngModel placeholder="uname" required minlength="5" maxlength="10"> {{login.uname}}
+  <p style="color:red" *ngIf="frm.submitted && uname.hasError('required')"> this is mandatory feild</p>
+  <p style="color:red" *ngIf="frm.submitted && uname.hasError('minlength')"> pease enter min 5 chars</p>
+  <input type="text" name="pwd" [(ngModel)]="login.pwd" #pwd=ngModel placeholder="pwd">{{login.pwd}}
+  <input type="submit">
+
+</form>
+field
+valid :: {{uname.valid}}
+invalid :: {{uname.invalid}}
+dirty :: {{uname.dirty}}
+pristine :: {{uname.pristine}}
+touched :: {{uname.touched}}
+untouched :: {{uname.untouched}}
+req :: {{uname.hasError('required')}}
+min :: {{uname.hasError('minlength')}}
+
+form
+valid :: {{frm.valid}}
+invalid :: {{frm.invalid}}
+dirty :: {{frm.dirty}}
+pristine :: {{frm.pristine}}
+touched :: {{frm.touched}}
+untouched :: {{frm.untouched}}
+submitted :: {{frm.submitted}}
+</pre>
