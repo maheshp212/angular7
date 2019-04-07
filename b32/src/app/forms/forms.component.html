@@ -1,0 +1,42 @@
+<p>
+  forms works!
+</p>
+<pre>
+<form name="f" #frm=ngForm>
+  <input type="text" name="fname" [(ngModel)]="fname" #firstName=ngModel required minlength="5">
+  <!-- <p style="color:red;" *ngIf="firstName.dirty && firstName.hasError('required') ">this isa mandorty feild</p>
+
+  <p style="color:red;" *ngIf="firstName.dirty && firstName.hasError('minlength') ">please enter min 5 chars</p> -->
+  
+  <!-- <p style="color:red;" *ngIf="firstName.touched && firstName.hasError('required') ">this isa mandorty feild</p>
+
+  <p style="color:red;" *ngIf="firstName.touched && firstName.hasError('minlength') ">please enter min 5 chars</p> -->
+
+  <p style="color:red;" *ngIf="frm.submitted && firstName.hasError('required') ">this isa mandorty feild</p>
+
+  <p style="color:red;" *ngIf="frm.submitted && firstName.hasError('minlength') ">please enter min 5 chars</p>
+  <input type="text" name="lname" [(ngModel)]="lname" #lastName=ngModel>
+  <input type="submit">
+</form>
+
+feild
+valid :: {{firstName.valid}}
+invalid :: {{firstName.invalid}}
+dirty :: {{firstName.dirty}}
+pristine :: {{firstName.pristine}}
+touched :: {{firstName.touched}}
+untouched :: {{firstName.untouched}}
+required :: {{firstName.hasError('required')}}
+minlength :: {{firstName.hasError('minlength')}}
+
+
+form
+valid :: {{frm.valid}}
+invalid :: {{frm.invalid}}
+dirty :: {{frm.dirty}}
+pristine :: {{frm.pristine}}
+touched :: {{frm.touched}}
+untouched :: {{frm.untouched}}
+submitted :: {{frm.submitted}}
+
+</pre>

@@ -27,3 +27,33 @@
     <td> {{fruit}} </td>
   </tr>
 </table>
+<input type="text" name="asdf" [(ngModel)]="fname"> {{fname}}
+
+<p (click)="callMe()" > this is click</p>
+<p (dblclick)="callMe()" > this is dblclick</p>
+<p (mouseover)="callMe()" > this is pver</p>
+<p (mouseout)="callMe()" > this is out</p>
+<p (mousedown)="callMe()" > this is down</p>
+<p (mouseup)="callMe()" > this is up</p>
+
+<pre>
+
+  <input type="text" name="asdf" [(ngModel)]="lname" (click)="callMe()" placeholder="click">  {{lname}}
+
+  <input type="text" name="asdf" [(ngModel)]="lname" (focus)="callMe()" placeholder="focus"> 
+
+  <input type="text" name="asdf" [(ngModel)]="lname" (blur)="callMe()" placeholder="blur">
+
+  <input type="text" name="asdf" [(ngModel)]="lname" (change)="callMe()" placeholder="change"> 
+
+  <input type="text" name="asdf" [(ngModel)]="lname" (copy)="callMe()" placeholder="copy"> 
+
+  <input type="text" name="asdf" [(ngModel)]="lname" (paste)="callMe()" placeholder="paste"> 
+
+  <input type="text" name="asdf" [(ngModel)]="lname" (cut)="callMe()" placeholder="cut"> 
+
+  <input type="text" name="asdf" [(ngModel)]="lname" (keyup)="callMe()" placeholder="keyp"> 
+
+  <input type="text" name="asdf" [(ngModel)]="lname" (keydown)="callMe()" placeholder="keydown"> 
+  
+</pre>
