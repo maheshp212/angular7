@@ -3,5 +3,14 @@
 </p>
 age -- fname <br>
 {{age}} -- {{fname}}
-
-
+<button (click)="createUser()">Create</button>
+<table border="1">
+  <tr *ngFor="let user of listUsers">
+    <td> {{user.id}} </td>
+    <td> {{user.fname}} </td>
+    <td> {{user.lname}} </td>
+    <td> {{user.age}} </td>
+    <td> {{user.email}} </td>
+    <td> {{user.password}} </td>
+  </tr>
+</table>
