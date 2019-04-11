@@ -18,4 +18,8 @@ export class DirectivesComponent implements OnInit {
     console.log(this.counter);
     this.counter++;
   }
+
+  getCombinedValue(res){
+    console.log(res);
+  }
 }

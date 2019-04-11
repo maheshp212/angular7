@@ -1,6 +1,14 @@
 <p>
   directives works!
 </p>
+
+<p [appAttr] 
+    [msg]="'hi'"
+    [fname]="fname"
+    (combined)="getCombinedValue($event)" >this is custom directive</p>
+
+    <p class="appClass"> class directive </p>
+
 <p *ngIf="fname == 'qshores'"> this is if </p>
 <p [hidden]="fname == 'qshore'"> this is hidden </p>
 
