@@ -14,6 +14,7 @@ import { HexaPipe } from './hexa.pipe';
 import { ParamsPipe } from './params.pipe';
 import { AttrDirective } from './attr.directive';
 import { ClassDirective } from './class.directive';
+import { OutputComponent } from './output/output.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ClassDirective } from './class.directive';
     HexaPipe,
     ParamsPipe,
     AttrDirective,
-    ClassDirective
+    ClassDirective,
+    OutputComponent
   ],
   imports: [
     BrowserModule,

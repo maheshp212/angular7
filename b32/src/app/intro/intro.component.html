@@ -1,3 +1,11 @@
 <p>
   intro works!
 </p>
+<app-output [userInfo] = "user" 
+  (getName)="getName($event)"
+></app-output>
+
+<app-output [userInfo] = "user2" 
+  (getTech)="getTech($event)"
+  (getExp)="getExperince($event)"
+></app-output>
