@@ -6,23 +6,29 @@ header{
         float:left;
         width: 30%;
         img{
-            text-align: right;
-            width:50px;
+            width: 80px;
+        float: right;
         }
     }
     .title{
         float: left;
-        width: 70%
+        width: 70%;
+        color:white;
+        h1{
+            margin:20px;
+        }
     }
 }
 nav{
     clear:both;
-    height: 50px;
+    height: 42px;
     background-color: #4580bf;
     ul{
+        margin:0;
         li{
             float: left;
-            margin: 0 5px;
+            margin: 12px 5px;
+            list-style-type: none;
             a{
                 padding: 10px;
                 text-decoration: none;
@@ -48,7 +54,8 @@ nav{
 footer{
     clear: both;
     text-align: center;
-    padding: 10px 0; 
-    height: 40px;
+    padding: 15px 0; 
     background-color: #2b2a2f;
+    font-weight: bold;
+    color:white;
 }
