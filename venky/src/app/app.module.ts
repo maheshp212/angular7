@@ -8,10 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './intro/intro.component';
 import { VariablesComponent } from './variables/variables.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [ // component , directive , pipe
-    AppComponent, HomeComponent, IntroComponent, VariablesComponent, DirectivesComponent
+    AppComponent, HomeComponent, IntroComponent, 
+    VariablesComponent, DirectivesComponent, FormsComponent
   ],
   imports: [ // modules
     BrowserModule,

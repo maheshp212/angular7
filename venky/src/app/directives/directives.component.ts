@@ -12,6 +12,7 @@ export class DirectivesComponent implements OnInit {
   fruits:string[] = ['kiwi', 'orane', 'melong'];
   showBtn1 = false;
   showFissoBtn = false;
+  count =0;
 
   constructor() { }
 
@@ -24,6 +25,12 @@ export class DirectivesComponent implements OnInit {
 
   enableFisso(){
     this.showFissoBtn = true;
+  }
+
+
+  callMe(){
+    console.log(this.count);
+    this.count++;
   }
 
 }

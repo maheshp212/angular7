@@ -32,5 +32,35 @@
   <button *ngIf="showBtn1">btn1</button>
 </div>
 <div>
-<input type="text" name="fname" [(ngModel)]="fname" (click)="enableFisso()" > <button *ngIf="showFissoBtn">btn2</button>
+<input type="text" name="fname" [(ngModel)]="fname" (eclick)="enableFisso()" > <button *ngIf="showFissoBtn">btn2</button>
 </div>
+
+<p (click)="callMe()"> this is click</p>
+<p (dblclick)="callMe()"> this is dblclick</p>
+<p (mouseover)="callMe()"> this is mouseover</p>
+<p (mouseout)="callMe()"> this is mouseout</p>
+<p (mouseenter)="callMe()"> this is mouseenter</p>
+<p (mouseleave)="callMe()"> this is mouseleave</p>
+<p (mousemove)="callMe()"> this is mousemove</p>
+
+<pre>
+    <input type="text" name="lname" [(ngModel)]="lname" (click)="callMe()"  placeholder="click">
+ 
+    <input type="text" name="lname" [(ngModel)]="lname" (focus)="callMe()"  placeholder="focus">
+ 
+    <input type="text" name="lname" [(ngModel)]="lname" (blur)="callMe()"  placeholder="blur">
+ 
+    <input type="text" name="lname" [(ngModel)]="lname" (change)="callMe()"  placeholder="change">
+ 
+    <input type="text" name="lname" [(ngModel)]="lname" (keypress)="callMe()"  placeholder="press">
+ 
+    <input type="text" name="lname" [(ngModel)]="lname" (keyup)="callMe()"  placeholder="up">
+ 
+    <input type="text" name="lname" [(ngModel)]="lname" (keydown)="callMe()"  placeholder="down">
+
+    <input type="text" name="lname" [(ngModel)]="lname" (copy)="callMe()"  placeholder="copy">
+
+    <input type="text" name="lname" [(ngModel)]="lname" (paste)="callMe()"  placeholder="paste">
+
+    <input type="text" name="lname" [(ngModel)]="lname" (cut)="callMe()"  placeholder="cut">
+</pre>
