@@ -1,3 +1,22 @@
 <p>
   intro works!
 </p>
+
+
+<div style=" border:1px solid; margin-bottom:30px;" (click)="enableButtons1()">
+  <div><h1>heading 1</h1></div>
+  <div>
+    <input type="text" [(ngModel)]="t11" name="t11" placeholder="t11"> <button *ngIf="showBtn1">t11</button> <br>
+    <input type="text" [(ngModel)]="t12" name="t12" placeholder="t12"> <button *ngIf="showBtn1">t12</button> <br>
+    <input type="text" [(ngModel)]="t13" name="t13" placeholder="t13"> <button *ngIf="showBtn1">t13</button> <br>
+  </div>
+</div>
+
+<div style=" border:1px solid" (click)="enableButtons2()">
+  <div><h1>heading2</h1> </div>
+  <div>
+    <input type="text" [(ngModel)]="t21" name="t21" placeholder="t21"> <button *ngIf="showBtn2">t21</button> <br>
+    <input type="text" [(ngModel)]="t22" name="t22" placeholder="t22"> <button *ngIf="showBtn2">t212</button> <br>
+    <input type="text" [(ngModel)]="t23" name="t23" placeholder="t23"> <button *ngIf="showBtn2">t23</button> <br>
+  </div>
+</div>
