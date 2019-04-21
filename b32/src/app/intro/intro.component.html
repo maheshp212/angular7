@@ -1,11 +1,29 @@
 <p>
   intro works!
 </p>
-<app-output [userInfo] = "user" 
+<!-- <app-output [userInfo] = "user" 
   (getName)="getName($event)"
 ></app-output>
 
 <app-output [userInfo] = "user2" 
   (getTech)="getTech($event)"
   (getExp)="getExperince($event)"
-></app-output>
+></app-output> -->
+
+**********************
+<p *ngFor="let alert of alerts">
+  <ngb-alert [type]="alert.type" (close)="close(alert)">{{ alert.message }}</ngb-alert>
+</p>
+<p>
+  <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+</p>
+
+
+<slideshow [height]="height"
+           [minHeight]="'525px'"
+           [autoPlay]="true"
+           [showArrows]="true"
+           [imageUrls]="imageSources"
+           [lazyLoad]="imageSources?.length > 1"
+           [autoPlayWaitForLazyLoad]="true">
+</slideshow>

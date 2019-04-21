@@ -9,8 +9,8 @@
 </header>
 <nav>
   <ul>
-    <li><a [routerLink]="['home']">HOME</a></li>
-    <li><a [routerLink]="['intro']">Intro</a></li>
+    <li><a [routerLink]="['/']">HOME</a></li>
+    <li><a [routerLink]="['intro','mahesh-perla', '56', 'p', 'TTMNLSKJCOIIJ']">Intro</a></li>
     <li><a [routerLink]="['vari']">variables</a></li>
     <li><a [routerLink]="['directives']">Directives</a></li>
     <li><a [routerLink]="['forms']">Forms</a></li>
@@ -18,6 +18,8 @@
     <li><a [routerLink]="['pipes']">Pipes</a></li>
     <li><a [routerLink]="['api']">API's</a></li>
     <li><a [routerLink]="['life-cycle']"> LIfe Cycle</a></li>
+    <li><a [routerLink]="['mahsh']"> mahesh</a></li>
+    <li *ngFor="let fruit of fruits"><a [routerLink]="[fruit]"> {{fruit}}</a></li>
   </ul>
 </nav>
 <div class="container">

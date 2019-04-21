@@ -19,6 +19,7 @@
     <td>{{user.password}}</td>
     <td>
       <p (click)="viewUser(user.id)">view</p>
+      <li><a [routerLink]="['view-user', user.id]">view</a></li>
       <div (click)="editUser(user.id)">Edit</div>
       <span (click)="deleteUser(user.id)">Delete</span>
     </td>
