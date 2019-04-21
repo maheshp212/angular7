@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './intro/intro.component';
@@ -15,7 +16,10 @@ import { ParamsPipe } from './params.pipe';
 import { AttrDirective } from './attr.directive';
 import { ClassDirective } from './class.directive';
 import { OutputComponent } from './output/output.component';
-
+import { ApisComponent } from './apis/apis.component';
+import {UserService} from './user.service';
+import { WebapiComponent } from './webapi/webapi.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,14 +34,18 @@ import { OutputComponent } from './output/output.component';
     ParamsPipe,
     AttrDirective,
     ClassDirective,
-    OutputComponent
+    OutputComponent,
+    ApisComponent,
+    WebapiComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

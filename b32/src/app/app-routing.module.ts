@@ -7,7 +7,9 @@ import { DirectivesComponent } from './directives/directives.component';
 import { FormsComponent } from './forms/forms.component';
 import { ObjFormsComponent } from './obj-forms/obj-forms.component';
 import { PipesComponent } from './pipes/pipes.component';
-
+import { ApisComponent } from './apis/apis.component';
+import { WebapiComponent } from './webapi/webapi.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 const routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:'intro', component: IntroComponent},
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path:'forms', component: FormsComponent},
   {path:'obj-forms', component: ObjFormsComponent},
   {path:'pipes', component: PipesComponent},
+  {path:'api', component: WebapiComponent},
+  {path:'life-cycle', component: LifecycleComponent},
 
 ];
 
