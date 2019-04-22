@@ -24,7 +24,7 @@ export class UsersService {
   createUser(){
     var url = 'http://api.qshore.com/add-user';
     var user = {
-      fname: 'Mohan',
+      fname: 'venky',
       lname:'Lal',
       age:23,
       email:'mohanlal@123',
