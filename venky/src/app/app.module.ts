@@ -17,11 +17,12 @@ import { ParamsPipe } from './params.pipe';
 import { CustomComponent } from './custom/custom.component';
 import { ApisComponent } from './apis/apis.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [ // component , directive , pipe
     AppComponent, HomeComponent, IntroComponent, 
-    VariablesComponent, DirectivesComponent, FormsComponent, ObjFormsComponent, PipesComponent, HexaPipe, ParamsPipe, CustomComponent, ApisComponent, LifeCycleComponent
+    VariablesComponent, DirectivesComponent, FormsComponent, ObjFormsComponent, PipesComponent, HexaPipe, ParamsPipe, CustomComponent, ApisComponent, LifeCycleComponent, NotfoundComponent
   ],
   imports: [ // modules
     BrowserModule,
