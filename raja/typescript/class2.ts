@@ -3,6 +3,11 @@ class  user{
 	fname: string = 'hello';
 	lname:string ='world';
 
+	constructor(){
+
+		console.log('constructor invoked');
+	}
+
 	//methods
 	display(){
 		console.log(this.fname + this.lname)
