@@ -5,6 +5,7 @@ import { IntroComponent } from './intro/intro.component';
 import { VariablesComponent } from './variables/variables.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { FormsComponent } from './forms/forms.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'variables', component:VariablesComponent},
   {path:'dir', component:DirectivesComponent},
   {path:'forms', component:FormsComponent},
+  {path:'pipes', component:PipesComponent},
 ];
 
 @NgModule({

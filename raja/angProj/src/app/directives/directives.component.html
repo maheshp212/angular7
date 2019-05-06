@@ -6,6 +6,25 @@
   {{fruits}}
 </pre>
 
+<app-custom 
+  [msg]="'hello'"
+  [fname]="fname"
+  [user]="{name:'angular', exp:8, gender:'male'}" 
+  (name) = "fetchName($event)"
+  (gender) = "getGender($event)"
+  (exp) = "fetchExp($event)"
+  ></app-custom>
+
+
+  <app-custom 
+  [msg]="'heiiii'"
+  [fname]="fname"
+  [user]="{name:'angular', exp:8, gender:'male'}" 
+  (name) = "fetchName($event)"
+  (gender) = "getGender($event)"
+  (exp) = "fetchExp($event)"
+  ></app-custom>
+
 <p *ngIf="fname=='qshore'">this is if </p> 
 
 <p [hidden]="fname=='qshore'">this is hiddedn </p> 

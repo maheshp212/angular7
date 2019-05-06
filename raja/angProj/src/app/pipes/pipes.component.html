@@ -1,0 +1,29 @@
+<p>
+  pipes works!
+</p>
+<pre>
+  {{fname}}
+  {{fname | lowercase}}
+  {{fname|uppercase}}
+
+  {{age}}
+  {{age | number}}
+  
+  {{age | hexa}}
+  {{255 | hexa}}
+
+
+  {{age | currency}}
+  {{age | currency:'Rs '}}
+  {{age | currency:'INR '}}
+  {{age | currency:'INR'}}
+  {{age | currency:'&#8377;'}}
+
+    {{5 | params:3:6:1}}
+  {{day}}
+  {{day | date}}
+  {{day | date: 'dd-MM-yy'}}
+
+  {{user}}
+  {{user | json}}
+</pre>

@@ -19,4 +19,16 @@ export class DirectivesComponent implements OnInit {
     this.counter++;
   }
 
+  fetchName(name){
+    alert(name);
+  }
+
+  getGender(g){
+    alert(g);
+  }
+
+  fetchExp(exp){
+    alert(exp);
+  }
+
 }
