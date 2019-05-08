@@ -6,6 +6,9 @@ import { VariablesComponent } from './variables/variables.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { FormsComponent } from './forms/forms.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { ObjFormsComponent } from './obj-forms/obj-forms.component';
+import { ApisComponent } from './apis/apis.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -14,6 +17,9 @@ const routes: Routes = [
   {path:'dir', component:DirectivesComponent},
   {path:'forms', component:FormsComponent},
   {path:'pipes', component:PipesComponent},
+  {path:'life-cycle', component:LifecycleComponent},
+  {path:'obj-forms', component:ObjFormsComponent},
+  {path:'apis', component:ApisComponent},
 ];
 
 @NgModule({

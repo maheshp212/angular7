@@ -12,4 +12,10 @@ export class IntroComponent implements OnInit {
   ngOnInit() {
   }
 
+  fetchFormData(frm){
+    console.log('###########################');
+    console.log(frm)
+
+  }
+
 }
