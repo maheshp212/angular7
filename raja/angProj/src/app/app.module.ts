@@ -17,6 +17,9 @@ import { CustomComponent } from './custom/custom.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { ObjFormsComponent } from './obj-forms/obj-forms.component';
 import { ApisComponent } from './apis/apis.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { AttrDirective } from './attr.directive';
+import { ClassDirective } from './class.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { ApisComponent } from './apis/apis.component';
     CustomComponent,
     LifecycleComponent,
     ObjFormsComponent,
-    ApisComponent
+    ApisComponent,
+    NotfoundComponent,
+    AttrDirective,
+    ClassDirective
   ],
   imports: [
     BrowserModule,

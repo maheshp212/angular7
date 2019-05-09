@@ -30,5 +30,8 @@ export class DirectivesComponent implements OnInit {
   fetchExp(exp){
     alert(exp);
   }
-
+  
+  customLogic(){
+    console.log('logic from controller');
+  }
 }
