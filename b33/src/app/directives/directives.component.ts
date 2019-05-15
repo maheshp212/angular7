@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directives.component.scss']
 })
 export class DirectivesComponent implements OnInit {
-
+  fname:string = 'qshore';
+  fruits:string[] = ['kiwi', 'melon', 'berry'];
+  counter = 0;
   constructor() { }
 
   ngOnInit() {
   }
 
+
+  callMe(){
+    console.log(this.counter);
+    this.counter++;
+  }
 }
