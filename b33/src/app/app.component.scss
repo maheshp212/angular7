@@ -1,0 +1,55 @@
+header{
+clear: both;
+height: 55px;
+background-color: tomato;
+.logo{
+    float: left;
+    width:30%;
+    text-align: right;
+    img{
+        width: 50px;
+    }
+}
+.title{
+    float: left;
+    width:70%;
+    h1{
+        margin: 7px;
+    }
+}
+}
+nav{
+    clear: both;
+    height: 37px;
+    background-color: skyblue;
+    ul{
+        list-style-type: none;
+        margin:0;
+        padding: 10px;
+        li{
+            float: left;
+            margin: 0 5px; 
+            a{
+                padding:5px;
+                text-decoration: none;
+                color: white
+            }
+            a:hover{
+                background-color: tomato;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.container{
+    clear: both;
+    background-color: #f3f3f3;
+    min-height: 500px;
+    padding:10px;
+}
+footer{
+    clear: both;
+    background-color: tomato;
+    text-align: center;
+    padding:15px;
+}
