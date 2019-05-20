@@ -19,4 +19,15 @@ export class DirectivesComponent implements OnInit {
     console.log(this.counter);
     this.counter++;
   }
+
+
+  login(){
+    console.log('this is custom logic from component')
+  }
+
+  
+  sendDatas(inp){
+    console.log(inp)
+  }
 }
+

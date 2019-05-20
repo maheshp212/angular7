@@ -8,7 +8,10 @@
 [()] - 2 way data binding
 # - local variables
 -->
+    <p [appAttr]="login" [msg]="'asdfasfd'" [fname]="fname" (sendData)="sendDatas($event)"> this is custom directive</p>
 
+    <span [appLogout]="'asdfasdfasdfasdf'"> custom directive taking input as string </span>
+    <div class="appClass">class directive</div>
 <p *ngIf="fname=='qshore'">this is if</p> 
 <p [hidden]="fname=='qshore'">this is hidden</p> 
 
