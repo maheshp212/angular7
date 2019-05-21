@@ -1,0 +1,22 @@
+<p>
+  custom works!
+</p>
+
+
+<pre>
+  {{user  | json}}
+</pre>
+
+<table border="1">
+  <tr *ngFor="let data of list">
+    <td> {{data}} </td>
+  </tr>
+</table>
+
+<input [(ngModel)]="index" name="index">
+<button (click)="fetch()"> fetch list item</button>
+<button (click)="uname()"> send uname</button>
+
+<br>
+<br>
+<br>

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DirectivesComponent implements OnInit {
   fname:string = 'qshore';
   fruits:string[] = ['kiwi', 'melon', 'berry'];
+  user:any = {fname:'angular', exp:5};
   counter = 0;
   constructor() { }
 
@@ -28,6 +29,14 @@ export class DirectivesComponent implements OnInit {
   
   sendDatas(inp){
     console.log(inp)
+  }
+
+  fetchItem(item) {
+    alert(item);
+  }
+
+  sendUname(e){
+    alert(e);
   }
 }
 

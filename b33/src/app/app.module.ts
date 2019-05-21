@@ -16,6 +16,7 @@ import { ParamsPipe } from './params.pipe';
 import { AttrDirective } from './attr.directive';
 import { ClassDirective } from './class.directive';
 import { LogoutDirective } from './logout.directive';
+import { CustomComponent } from './custom/custom.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { LogoutDirective } from './logout.directive';
     ParamsPipe,
     AttrDirective,
     ClassDirective,
-    LogoutDirective
+    LogoutDirective,
+    CustomComponent
   ],
   imports: [
     BrowserModule,

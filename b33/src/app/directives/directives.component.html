@@ -8,6 +8,19 @@
 [()] - 2 way data binding
 # - local variables
 -->
+
+###########################
+
+<app-custom 
+  [user]="user"
+  [list]="fruits"
+  (sendUname)="sendUname($event)"
+  (fetchListItem) = "fetchItem($event)"
+  ></app-custom>
+
+
+###########################
+
     <p [appAttr]="login" [msg]="'asdfasfd'" [fname]="fname" (sendData)="sendDatas($event)"> this is custom directive</p>
 
     <span [appLogout]="'asdfasdfasdfasdf'"> custom directive taking input as string </span>
