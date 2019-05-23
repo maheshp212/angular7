@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,9 @@ import { AttrDirective } from './attr.directive';
 import { ClassDirective } from './class.directive';
 import { LogoutDirective } from './logout.directive';
 import { CustomComponent } from './custom/custom.component';
+import { MaheshTableComponent } from './mahesh-table/mahesh-table.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { ApisComponent } from './apis/apis.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +37,16 @@ import { CustomComponent } from './custom/custom.component';
     AttrDirective,
     ClassDirective,
     LogoutDirective,
-    CustomComponent
+    CustomComponent,
+    MaheshTableComponent,
+    LifecycleComponent,
+    ApisComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
