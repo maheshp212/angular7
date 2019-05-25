@@ -1,0 +1,41 @@
+<p>
+  forms works!
+</p>
+<pre>
+<form name="frm" #f=ngForm (submit)="f.valid && login()">
+  <input type="text" name="fname" [(ngModel)]="address" #addressName=ngModel required minlength="5"> {{address}}
+
+  <!-- <p style="color:red" *ngIf="addressName.touched && addressName.invalid"> pelase enter a valid input</p> -->
+
+  <!-- <p style="color:red" *ngIf="addressName.dirty && addressName.hasError('required')"> this is mandatory field</p>
+  <p style="color:red" *ngIf="addressName.dirty && addressName.hasError('minlength')"> pelase enter min 5 chars</p> -->
+
+  <p style="color:red" *ngIf="f.submitted && addressName.hasError('required')"> this is mandatory field</p>
+  <p style="color:red" *ngIf="f.submitted && addressName.hasError('minlength')"> pelase enter min 5 chars</p>
+
+  <input type="text" name="lname" [(ngModel)]="email" #emailId=ngModel> {{email}}
+  <input type="submit">
+</form>
+
+
+field states
+valid :: {{addressName.valid}}
+invalid :: {{addressName.invalid}}
+dirty :: {{addressName.dirty}}
+pristine :: {{addressName.pristine}}
+touched :: {{addressName.touched}}
+untouched :: {{addressName.untouched}}
+required :: {{addressName.hasError('required')}}
+minlength :: {{addressName.hasError('minlength')}}
+
+
+
+form states
+valid :: {{f.valid}}
+invalid :: {{f.invalid}}
+dirty :: {{f.dirty}}
+pristine :: {{f.pristine}}
+touched :: {{f.touched}}
+untouched :: {{f.untouched}}
+submitted :: {{f.submitted}}
+</pre>

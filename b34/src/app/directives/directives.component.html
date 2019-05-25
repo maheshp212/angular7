@@ -1,0 +1,103 @@
+<p>
+  directives works!
+</p>
+<pre>
+  {{fname}}
+  {{fruits}}
+</pre>
+
+
+<!--
+  * - condtions & loops
+  [] - attributes
+  () - events
+  [()] - two way data binding
+  # - local varaibles
+-->
+<p *ngIf="fname=='qshore'"> this is if </p>
+<p [hidden]="fname=='qshore'"> this is hidden </p>
+
+<p *ngFor="let fruit of fruits"> {{fruit}} </p>
+
+<ol >
+  <li *ngFor="let fruit of fruits">{{fruit}}</li>
+</ol>
+
+<select >
+  <option *ngFor="let fruit of fruits"> {{fruit}} </option>
+</select>
+
+<table border="1">
+  <tr *ngFor="let fruit of fruits">
+    <td> {{fruit}} </td>
+  </tr>
+</table>
+
+<p [ngSwitch]="fname">
+    <span *ngSwitchCase="'qshore'"> this is qshore</span>
+    <span *ngSwitchCase="'tech'"> this is tech</span>
+    <span *ngSwitchCase="'angular'"> this is angular</span>
+    <span *ngSwitchDefault> this is default</span>
+</p>
+
+
+<p [ngClass]="{red:(fname == 'qshores'), padder:(fruits.length==3)}" > this is ng class</p>
+<p [ngStyle]="{color: getColorCode()}" > this is ng style</p>
+
+<input type="text" name="fnames" [(ngModel)]="fname">
+
+
+<div (click)="callMe()"> this is click</div>
+<div (dblclick)="callMe()"> this is dblclick</div>
+<div (mouseover)="callMe()"> this is over</div>
+<div (mouseout)="callMe()"> this is out</div>
+<div (mouseenter)="callMe()"> this is enter</div>
+<div (mouseleave)="callMe()"> this is leave</div>
+<div (mousemove)="callMe()"> this is move</div>
+
+<pre>
+
+<input type="text" name="fname" [(ngModel)]="fname" (click)="callMe()" placeholder="click">
+
+<input type="text" name="fname" [(ngModel)]="fname" (focus)="callMe()" placeholder="focus">
+
+<input type="text" name="fname" [(ngModel)]="fname" (blur)="callMe()" placeholder=" blur">
+
+<input type="text" name="fname" [(ngModel)]="fname" (change)="callMe()" placeholder="chnage">
+
+<input type="text" name="fname" [(ngModel)]="fname" (keyup)="callMe()" placeholder="up">
+
+<input type="text" name="fname" [(ngModel)]="fname" (keydown)="callMe()" placeholder="down">
+
+<input type="text" name="fname" [(ngModel)]="fname" (keypress)="callMe()" placeholder="press">
+
+<input type="text" name="fname" [(ngModel)]="fname" (cut)="callMe()" placeholder="cut">
+
+<input type="text" name="fname" [(ngModel)]="fname" (copy)="callMe()" placeholder="copy">
+
+<input type="text" name="fname" [(ngModel)]="fname" (paste)="callMe()" placeholder="paste">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</pre>
