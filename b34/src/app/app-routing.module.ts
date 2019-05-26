@@ -6,6 +6,7 @@ import { VariablesComponent } from './variables/variables.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { FormsComponent } from './forms/forms.component';
 import { ObjFormsComponent } from './obj-forms/obj-forms.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'dir', component:DirectivesComponent},
   {path:'forms', component:FormsComponent},
   {path:'obj-forms', component:ObjFormsComponent},
+  {path:'pipes', component:PipeComponent},
 
 ];
 

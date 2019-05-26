@@ -10,6 +10,14 @@ import { VariablesComponent } from './variables/variables.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { FormsComponent } from './forms/forms.component';
 import { ObjFormsComponent } from './obj-forms/obj-forms.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { HexaPipe } from './hexa.pipe';
+import { ParamsPipe } from './params.pipe';
+import { PhonePipe } from './phone.pipe';
+import { AttrDirective } from './attr.directive';
+import { ClassDirective } from './class.directive';
+import { CustomComponent } from './custom/custom.component';
+import { MaheshTableComponent } from './mahesh-table/mahesh-table.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +27,15 @@ import { ObjFormsComponent } from './obj-forms/obj-forms.component';
     VariablesComponent,
     DirectivesComponent,
     FormsComponent,
-    ObjFormsComponent
+    ObjFormsComponent,
+    PipeComponent,
+    HexaPipe,
+    ParamsPipe,
+    PhonePipe,
+    AttrDirective,
+    ClassDirective,
+    CustomComponent,
+    MaheshTableComponent
   ],
   imports: [
     BrowserModule,

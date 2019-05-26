@@ -1,3 +1,20 @@
 <p>
   intro works!
 </p>
+<p [appAttr]="custom"  [msg]="'Hello... '" [fname]="fname" (sendData)="sendData($event)"> this is custom directive</p>
+
+<p class="appClass"> class directive</p>
+
+<!-- nested components -->
+<!-- <app-forms></app-forms> -->
+<app-custom [obj]="user" [arr]="fruits" (getArrValue)="selectedFruit($event)"></app-custom>
+
+<mahesh-table [headers]="userHeaders" [data]="users"></mahesh-table>
+
+<br><br><br>
+
+<mahesh-table [headers]="carHeaders" [data]="cars"></mahesh-table>
+
+<br><br><br>
+
+<mahesh-table [headers]="animalHeaders" [data]="animals"></mahesh-table>
