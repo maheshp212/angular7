@@ -10,6 +10,7 @@ export class IntroComponent implements OnInit {
   fruits : string[] = ['kiwi', 'melon', 'berry'];
   user:any = {name:'angular', exp:456};
 
+ 
   userHeaders:any = [
     {name: 'First Name', key:'fname'},
     {name: 'Last Name', key:'lname'},
