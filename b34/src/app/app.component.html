@@ -7,12 +7,14 @@
   <ul>
     <li><a [routerLink]="['home']">Home</a></li>
     <li><a [routerLink]="['intro']">Intro</a></li>
-    <li><a [routerLink]="['var']">Variables</a></li>
+    <li><a [routerLink]="['var', 'mahesh', 34]">Variables</a></li>
+    <li *ngFor="let user of users"><a [routerLink]="['var', user.name, user.age]">{{user.name}}</a></li>
     <li><a [routerLink]="['dir']">Directivess</a></li>
     <li><a [routerLink]="['forms']">Forms</a></li>
     <li><a [routerLink]="['obj-forms']">Obj Forms</a></li>
     <li><a [routerLink]="['pipes']">Pipes</a></li>
     <li><a [routerLink]="['apis']">APis</a></li>
+    <li><a [routerLink]="['mahesh']">mahesh</a></li>
   </ul>
 </nav>
 <main>

@@ -20,6 +20,7 @@ import { ClassDirective } from './class.directive';
 import { CustomComponent } from './custom/custom.component';
 import { MaheshTableComponent } from './mahesh-table/mahesh-table.component';
 import { ApisComponent } from './apis/apis.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ApisComponent } from './apis/apis.component';
     ClassDirective,
     CustomComponent,
     MaheshTableComponent,
-    ApisComponent
+    ApisComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
