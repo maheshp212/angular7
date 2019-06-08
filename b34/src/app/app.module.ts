@@ -21,6 +21,7 @@ import { CustomComponent } from './custom/custom.component';
 import { MaheshTableComponent } from './mahesh-table/mahesh-table.component';
 import { ApisComponent } from './apis/apis.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     CustomComponent,
     MaheshTableComponent,
     ApisComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,

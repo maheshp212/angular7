@@ -10,7 +10,7 @@ export class UsersService {
   listUsers(){
     let url = 'http://api.qshore.com/users';
     let url2 = 'http://newtel.in/mahesh';
-    return this.http.get(url2);
+    return this.http.get(url);
   }
 
   viewUser(id){
