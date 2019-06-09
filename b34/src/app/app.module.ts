@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
 import {HttpClientModule} from '@angular/common/http';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MatButtonModule, MatTableModule} from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +24,7 @@ import { MaheshTableComponent } from './mahesh-table/mahesh-table.component';
 import { ApisComponent } from './apis/apis.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { BootstrapComponent } from './bootstrap/bootstrap.component';
 
 @NgModule({
   declarations: [
@@ -42,13 +45,17 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     MaheshTableComponent,
     ApisComponent,
     NotfoundComponent,
-    LifeCycleComponent
+    LifeCycleComponent,
+    BootstrapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule,
+    MatButtonModule,
+      
   ],
   providers: [],
   bootstrap: [AppComponent]
